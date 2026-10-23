@@ -74,13 +74,27 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+
     private void EndDialogue()
     {
-        speakerText.text = "";
-        dialogueText.text = "";
+        if (currentDialogue == null)
+            return;
+
+        DialogueSequence nextSequence =
+            currentDialogue.nextSequence;
 
         currentDialogue = null;
 
-        Debug.Log("Dialogue finished.");
+        if (nextSequence != null)
+        {
+            StartDialogue(nextSequence);
+            return;
+        }
+
+        speakerText.text = "";
+        dialogueText.text = "";
+
+        Debug.Log("End of story sequence.");
     }
+
 }

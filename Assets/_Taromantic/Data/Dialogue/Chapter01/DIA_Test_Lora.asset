@@ -12,10 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f705851d7bfd29746b630a5955f4149e, type: 3}
   m_Name: DIA_Test_Lora
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  sequenceID: 2
   lines:
   - speaker: Lora
     text: well good morning
+    background: {fileID: 0}
+    characterPortrait: {fileID: 0}
+    portraitPosition: 0
+    clearPortraits: 0
   - speaker: Oracle
     text: The hell ?
+    background: {fileID: 0}
+    characterPortrait: {fileID: 0}
+    portraitPosition: 0
+    clearPortraits: 0
   - speaker: Lora
     text: you forgot I was coming over didnt you ?
+    background: {fileID: 0}
+    characterPortrait: {fileID: 0}
+    portraitPosition: 0
+    clearPortraits: 0
+  nextSequence: {fileID: 11400000}
